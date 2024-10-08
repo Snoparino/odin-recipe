@@ -11,29 +11,28 @@ body {
 }
 
 .container {
-    /* max-width: 1200px; */
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .nav {
-    background-color: rgb(0, 0, 0);
-    margin: 20px 0;
-    padding: 12px 25px;
     display: flex;
-    justify-content: center;
-    border: solid 5px gold;
-    border-radius: 12px;
+    align-items: flex-start;
+    background-color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    border: solid 2px gold;
+    border-radius: 1rem;
     transition: all 0.5s ease-in-out;
+    margin: 32px 0;
 }
 
 .nav:hover {
     color: #000;
     background-color: rgb(224, 136, 73);
     transform: scale(1.1);
-
 
     h1 {
         color: #000
@@ -44,43 +43,47 @@ h1 {
     color: rgb(224, 136, 73);
 }
 
-ul {
-    list-style: none;
+.cards {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-items: center;
     align-items: center;
     gap: 20px;
-}
+    align-self: center;
 
-ul li {
-    display: flex;
-    border: solid 1px black;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    transition: all 0.4s ease-in-out;
-}
 
-li:hover {
-    background: #d9d9d9;
-}
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px black;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+        height: auto;
+        width: 200px;
+    }
 
-li img {
-    display: block;
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    text-align: center;
-}
+    .card:hover {
+        background: #d9d9d9;
+    }
 
-a {
-    font-size: 22px;
-    text-decoration: none;
-    color: darkblue;
-}
+    .card img {
+        height: 80%;
+        width: 100%;
+    }
 
-a:hover {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    .card h2 {
+        font-size: 24px;
+        color: #000;
+    }
+
+    .card h2:hover {
+        text-decoration: none;
+        color: darkblue;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
