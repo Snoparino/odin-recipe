@@ -7,3 +7,46 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 20px;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+li img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    text-align: center;
+}
+
+a {
+
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(89, 89, 217);
+}
