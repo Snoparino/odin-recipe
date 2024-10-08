@@ -6,16 +6,25 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fff;
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
-h1 {
+.nav {
+    display: inline-block;
     text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
     margin: 20px 0;
+    padding: 12px 0;
+}
+
+h1 {
+    color: rgb(224, 136, 73);
 }
 
 ul {
